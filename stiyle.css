@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: hsl(217, 19%, 35%);
+    font-size: 13px;
+}
+
+.page {
+    max-width: 1440px;
+    background-color: hsl(210, 46%, 95%); 
+    padding: 265px 0px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 760px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.content__row {
+    width: auto;
+    display: flex;
+    margin: 0 15px;
+}
+
+.content__images {
+    height: 280px;
+    flex: 0 0 285px;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+}
+
+.content__images img {
+    height: 100%;
+}
+
+.content__column {
+    height: 280px;
+    background-color: #fff;
+    padding: 30px 42px 30px 40px;
+}
+
+.title__content {
+    font-size: 20px;
+    line-height: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.text__content {
+    font-size: 13px;
+    line-height: 1.25rem;
+    margin-bottom: 20px;
+    color: hsl(214, 17%, 51%);
+}
+.contact-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userInfo {
+    display: flex;
+}
+
+.user-avatar {
+    height: 40px;
+    flex: 0 0 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-avatar img {
+    height: 100%;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.date-register {
+    margin-top: 3px;
+    font-weight: 500;
+    color: hsl(214, 17%, 51%);
+}
+
+.share-button {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    padding: 9px 7px 5px 9px;
+}
+.share-button img {
+}
