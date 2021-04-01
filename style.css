@@ -117,10 +117,6 @@ body {
 }
 
 .icon-social {
-    display: none;
-}
-
-.icon-social--active {
     display: flex;
     width: 245px;
     justify-content: center;
@@ -132,12 +128,20 @@ body {
     border-radius: 10px;
     background-color: rgb(72, 85, 106);
     position: absolute;
+    opacity: 0;
     right: -65px;
-    bottom: 90px;
-    z-index: 10;
+    bottom: 60px;
+    z-index: 1;
+    transition: opacity .5s, bottom .5s;
 }
 
-.icon-social--active::before {
+.icon-social--active {
+    opacity: 1;
+    bottom: 90px;
+    transition: opacity .5s, bottom .5s;
+}
+
+.icon-social:before {
     content: "";
     width: 0;
     height: 0;
@@ -148,9 +152,10 @@ body {
     bottom: -25px;
     right: -97px;
 }
-
-.icon-social--active img {
+  
+.icon-social img {
     margin-left: 20px;
+
 }
 
 @media only screen and (max-width: 900px) {
