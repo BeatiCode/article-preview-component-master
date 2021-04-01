@@ -27,6 +27,9 @@ body {
     width: auto;
     display: flex;
     margin: 0 15px;
+    box-shadow: 7px 5px 11px 0px rgba(0 0 0 / 6%);
+    overflow: initial;
+    border-radius: 10px;
 }
 
 .content__images {
@@ -34,7 +37,7 @@ body {
     height: 280px;
     flex: 0 0 285px;
     overflow: hidden;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .content__images img {
@@ -44,8 +47,8 @@ body {
 .content__column {
     background-color: #fff;
     padding: 30px 40px 30px 40px;
-    border-radius: 0 10px 10px 0;
     position: relative;
+    border-radius: 0 10px 10px 0;
 }
 
 .title__content {
@@ -128,6 +131,7 @@ body {
     border-radius: 10px;
     background-color: rgb(72, 85, 106);
     position: absolute;
+    box-shadow: 4px 5px 13px 0px ;
     opacity: 0;
     right: -65px;
     bottom: 60px;
