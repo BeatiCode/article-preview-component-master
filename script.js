@@ -1,15 +1,19 @@
-const button = document.querySelector('.share-button');
+const button = document.querySelector('.share');
 
-button.addEventListener('click', function () {
-  let socialNone = document.querySelector('.icon-social-none');
-  let socialActive = document.querySelector('.icon-social-active');
-    !socialActive ?
-      socialNone.classList.add("icon-social-active") :
-      socialNone.classList.remove("icon-social-active");
-  console.log("test", event.target)
-}, true);
 
-window.onclick = function () {
-  let socialNone = document.querySelector('.icon-social-none');
-  if (event.target !== button) socialNone.classList.remove("icon-social-active");
+const clickButtonShare = function () {
+  button.addEventListener('click', function () {
+    let socialActive = document.querySelector('.share-active');
+    if (event.target.closest('.icon-social-none')) return;
+    !socialActive ? this.classList.add("share-active") : this.classList.remove("share-active");
+  }, true);
 }
+const closeAll = function () {
+  document.body.addEventListener('click', function () {
+    if (event.target.closest('.share')) return;
+    console.log(event.target);
+    button.classList.remove("share-active");
+  })
+}
+clickButtonShare()
+closeAll()

@@ -100,7 +100,6 @@ body {
 }
 
 .share-button {
-  position: absolute;
   right: 40px;
   width: 30px;
   height: 30px;
@@ -140,15 +139,15 @@ body {
   display: none;
 }
 
-.icon-social-active {
+.share-active .icon-social-none {
   display: block;
 }
 
-.icon-social-active ~ .share-button {
+.share-active .share-button {
   background-color: rgb(72, 85, 106);
 }
 
-.icon-social-active ~ .share-button .arrow path {
+.share-active .share-button .arrow path {
   fill: #fff;
 }
 
