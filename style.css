@@ -27,7 +27,7 @@ body {
   width: auto;
   display: flex;
   margin: 0 15px;
-  box-shadow: 7px 5px 11px 0px rgba(0 0 0 / 6%);
+  box-shadow: 0 15px 25px 8px rgb(0 0 0 / 6%);
   overflow: initial;
   border-radius: 10px;
 }
